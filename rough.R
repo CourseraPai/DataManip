@@ -8,4 +8,13 @@ packageVersion("testthat")
 
 create_package("c:/R/Data/datamanip")
 use_git()
-
+load_all()
+check()
+use_mit_license()
+document()
+check()
+install()
+url = "https://raw.githubusercontent.com/VolodymyrGavrysh/DataCamp_projects/master/Analyze%20Your%20Runkeeper%20Fitness%20Data/datasets/cardioActivities.csv"
+library(datamanip)
+datamanip::get_data(url)
+use_github()
